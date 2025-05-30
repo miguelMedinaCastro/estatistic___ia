@@ -171,7 +171,7 @@ const CreateClass = () => {
     setResult(null);
 
     try {
-    const res = await fetch('https://estatistic-ia.onrender.com/gerar-plano-aula', {
+    const res = await fetch('https://backend-estatistic-ia.vercel.app/gerar-plano-aula', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
