@@ -171,24 +171,21 @@ const CreateClass = () => {
     setResult(null);
 
     try {
-      const res = await fetch('https://estatistic-ia.onrender.com/gerar-plano-aula', {
-          method: "POST",
-          headers: {
-             "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ prompt }),
-      });
-      const data = await res.json();
-      setResult(data.result || "Sem resposta");
-    } catch (error) {
-      console.error(error);
-      setResult("erro ao se comunicar com a API.");
-    } finally {
-      setIsLoading(false);
-    }
-    
+    const res = await fetch('https://estatistic-ia.onrender.com/gerar-plano-aula', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ prompt }),
+    });
+    const data = await res.json();
+    setResult(data.result || "Sem resposta");
+  } catch (error) {
+    console.error(error);
+    setResult("erro ao se comunicar com a API.");
+  } finally {
+    setIsLoading(false);
   }
-  
 
   return (
     <PageContainer>
