@@ -187,7 +187,7 @@ const CreateClass = () => {
     setResult("erro ao se comunicar com a API.");
   } finally {
     setIsLoading(false);
-  }
+  }}
 
   return (
     <PageContainer>
