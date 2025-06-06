@@ -173,7 +173,7 @@ const CreateClass = () => {
 
     // https://backend-estatistic-ia.vercel.app/gerar-plano-aula
     try {
-    const res = await fetch('https://backend-estatistic-ia.vercel.app/api/plan', {
+    const res = await fetch('https://backend-estatistic-ia.vercel.app/gerar-plano-aula', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
